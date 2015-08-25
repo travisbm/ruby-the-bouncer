@@ -1,21 +1,21 @@
 def check_age(age)
-  array = ["do nothing", "vote", "smoke", "drink", "rent a car"]
+  permissions = ["do nothing", "vote", "smoke", "drink", "rent a car"]
 
   if age < 18
-    puts "You can #{array[0]}!"
+    puts "You can #{permissions[0]}!"
   elsif age >= 18 && age < 21
-    puts "You can #{array[1]} and #{array[2]}!"
+    puts "You can #{permissions[1]} and #{permissions[2]}!"
   elsif age >= 21 && age < 25
-    puts "You can #{array[1]}, #{array[2]} and #{array[3]}!"
+    puts "You can #{permissions[1]}, #{permissions[2]} and #{permissions[3]}!"
   elsif age >= 25
-    puts "You can #{array[1]}, #{array[2]}, #{array[3]} and #{array[4]}!"
+    puts "You can #{permissions[1]}, #{permissions[2]}, #{permissions[3]} and #{permissions[4]}!"
   else
     exit
   end
 end
 
 def check_age_uk(age)
-  array = ["do nothing", "vote", "smoke", "drink", "rent a car"]
+  permissions = ["do nothing", "vote", "smoke", "drink", "rent a car"]
 
   if age < 18
     if age == 16 || age == 17
@@ -24,13 +24,13 @@ def check_age_uk(age)
       if ans.to_s == "Y"
         puts "You can drink with your mom, dork."
       else
-        puts "You can #{array[0]}!"
+        puts "You can #{permissions[0]}!"
       end #end of yes no if statement
     end #end of 16 or 17 if statement
   elsif age >= 18 && age <= 25
-    puts "You can #{array[1]}, #{array[2]} and #{array[3]}!"
+    puts "You can #{permissions[1]}, #{permissions[2]} and #{permissions[3]}!"
   elsif age >= 25
-    puts "You can #{array[1]}, #{array[2]}, #{array[3]} and #{array[4]}!"
+    puts "You can #{permissions[1]}, #{permissions[2]}, #{permissions[3]} and #{permissions[4]}!"
   else
     exit
   end
