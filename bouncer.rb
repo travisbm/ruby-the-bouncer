@@ -1,8 +1,3 @@
-print "How old are you? > "
-age = gets.chomp.to_i
-
-puts age
-
 def check_age(age)
   array = ["do nothing", "vote", "smoke", "drink", "rent a car"]
 
@@ -19,4 +14,13 @@ def check_age(age)
   end
 end
 
-check_age(age)
+loop do
+  print "How old are you? Enter a number or (Q)uit > "
+  age = gets.chomp.upcase
+
+  if age == "Q"
+    exit
+  else
+    check_age(age.to_i)
+  end #end of if statement
+end #end of do loop
