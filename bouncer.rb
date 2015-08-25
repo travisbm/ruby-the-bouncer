@@ -21,13 +21,11 @@ def check_age_uk(age)
     if age == 16 || age == 17
       print "Are your parents home (Y)es or (N)o > "
       ans = gets.chomp.upcase
-
       if ans.to_s == "Y"
         puts "You can drink with your mom, dork."
       else
         puts "You can #{array[0]}!"
       end #end of yes no if statement
-
     end #end of 16 or 17 if statement
   elsif age >= 18 && age <= 25
     puts "You can #{array[1]}, #{array[2]} and #{array[3]}!"
