@@ -8,6 +8,8 @@ def check_age(age)
 
   if age < 18
     puts "You can #{array[0]}!"
+  elsif age >= 18 && age < 21
+    puts "You can #{array[1]} and #{array[2]}!"
   else
     exit
   end
